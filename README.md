@@ -20,6 +20,26 @@ ee SOA Response class
 
     });
 
+
+### setHeader method
+
+you may set headers using the key=value pair method
+    
+    res.setHeader('discovery', 'discovered');
+
+### getHeader method
+
+you may read headers from a response
+    
+    var val = res.setHeader('discovery');
+
+### setHeader method
+
+you may test if a response has a header
+    
+    var hasHEader = res.hasHeader('discovery');
+    
+
 ## Status Codes
 
       OK                        : 1   // 200

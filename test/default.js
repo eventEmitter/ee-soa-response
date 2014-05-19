@@ -30,5 +30,17 @@
 				new SOAResponse().send(SOAResponse.statusCodes.nope, 2);
 			});
 		});	
+
+		it('should be able to store a header #1', function(){
+			assert.equal(new SOAResponse().setHeader('discovery', 'discovered').getHeader('discovery'), 'discovered');
+		});
+
+		it('should be able to store a header #2', function(){
+			assert.equal(new SOAResponse().setHeader('discovery', 'discovered').hasHeader('discovery'), true);
+		});
+
+		it('should be able to store a header #3', function(){
+			assert.equal(new SOAResponse().setHeader('discovery', 'discovered').hasHeader('discoasvery'), false);
+		});
 	});
 	
