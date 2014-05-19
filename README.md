@@ -48,3 +48,5 @@ ee SOA Response class
 
     , SERVICE_EXCEPTION         : 37  // 500
     , SERVICE_UNAVAILABLE       : 38  // 503
+
+    , TRANSPORT_NOT_AVAILABLE   : 39  // no http equivalent
