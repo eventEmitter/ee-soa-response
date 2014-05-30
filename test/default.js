@@ -42,5 +42,9 @@
 		it('should be able to store a header #3', function(){
 			assert.equal(new SOAResponse().setHeader('discovery', 'discovered').hasHeader('discoasvery'), false);
 		});
+
+		it('should be able to return the message for a code', function(){
+			assert.equal(SOAResponse.getMessage(1), 'OK');
+		});
 	});
 	
