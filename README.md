@@ -50,6 +50,8 @@ you may test if a response has a header
     , TARGET_NOT_MODIFIED       : 22  // 304
     , TARGET_NOT_FOUND          : 26  // 404
     , TARGET_GONE               : 29  // 410
+    
+    , CONFLICT                  : 80  //409, conflict, resource extsts already
 
     , ACCESS_MALFORMED          : 23  // 400
     , ACCESS_UNAUTHORIZED       : 24  // 401
