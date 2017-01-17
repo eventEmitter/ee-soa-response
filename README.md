@@ -44,14 +44,17 @@ you may test if a response has a header
 
       OK                        : 1   // 200
     , CREATED                   : 2   // 201
+    , ACCEPTED                  : 202 // 202
+    , NO_CONTENT                : 204 // 204
 
     , TARGET_MOVED              : 20  // 301
     , TARGET_FOUND              : 21  // 302
+    , SEE_OTHER                 : 303 // 303
     , TARGET_NOT_MODIFIED       : 22  // 304
     , TARGET_NOT_FOUND          : 26  // 404
     , TARGET_GONE               : 29  // 410
-    
-    , CONFLICT                  : 80  // 409, conflict, resource extsts already
+
+    , CONFLICT                  : 80  //409, conflict, resource extsts already
 
     , ACCESS_MALFORMED          : 23  // 400
     , ACCESS_UNAUTHORIZED       : 24  // 401
@@ -69,8 +72,7 @@ you may test if a response has a header
     , INVALID_API_VERSION       : 36  // 463 - api version is not valid
 
     , SERVICE_EXCEPTION         : 37  // 500
-    , SERVICE_UNAVAILABLE       : 38  // 503
-
     , NOT_IMPLEMENTED           : 501 // 501
+    , SERVICE_UNAVAILABLE       : 38  // 503
 
     , TRANSPORT_NOT_AVAILABLE   : 39  // no http equivalent
