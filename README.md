@@ -1,5 +1,7 @@
 # ee-soa-response
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/eventEmitter/ee-soa-response.svg)](https://greenkeeper.io/)
+
 ee SOA Response class
 
 ## installation
